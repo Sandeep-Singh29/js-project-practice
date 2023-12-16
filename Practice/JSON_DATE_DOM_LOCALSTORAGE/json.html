@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Json</title>
+</head>
+<body>
+  <script>
+
+    let product={
+      name : "Arrow",
+      size : "M",
+      price : 4567,
+      tailorName : "Sandy",
+      rating : {
+        stars : 4.4,
+        noOfRewiers : 4567
+      },
+    }
+
+// Consverion Of JSON to Object And then Object to Json
+
+    console.log(product);
+    console.log(typeof product);
+    // Object  to String Json Using stringify()
+    let str = JSON.stringify(product);
+    console.log(str);
+    console.log(typeof str);
+    // JSON string to Object
+    let convertjsonToObj = JSON.parse(str);
+    console.log(convertjsonToObj);
+    console.log(typeof convertjsonToObj);
+
+
+
+
+  </script>
+</body>
+</html>

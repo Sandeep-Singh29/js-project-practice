@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="greeting" style="text-align: center"></h2>
+    <script>
+      // function greeting(personName) {
+        function greeting(personName = 'Dear') {
+        let greet = new Date();
+        let hour = greet.getHours();
+        let heading = document.querySelector("#greeting");
+        console.log(hour);
+        if (hour > 5 && hour < 12) {
+          heading.innerText = `Good Morning ${personName} Current time is ${hour} hours : ${greet.getMinutes()}`;
+        } else if (hour > 12 && hour < 18) {
+          heading.innerText = `Good Afternoon ${personName} Current time is ${hour}  hours : ${greet.getMinutes()}`;
+        } else {
+          heading.innerText = `Good Night ${personName} Current time is ${hour} hours : ${greet.getMinutes()}`;
+        }
+      }
+      // greeting('Sandeep');
+      greeting();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Local Storage</title>
+</head>
+<body>
+  <script>
+
+    let user = {
+      name : "Sandeep",
+      age : "27",
+      address : "Delhi",
+      occupation : "Job",
+      gender : "Male",
+    }
+    localStorage.setItem('name' , 'Sandeep Singh');
+    console.log(localStorage.getItem('name'));
+    localStorage.setItem('user' , JSON.stringify(user));
+    console.log(localStorage.getItem('user'));
+    let getUserObject = JSON.parse(localStorage.getItem('user'));
+    console.log(getUserObject);
+
+
+
+  </script>
+</body>
+</html>

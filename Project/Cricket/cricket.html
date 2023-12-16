@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cricket Game</title>
+  <style>
+body{
+  text-align: center;
+}
+  </style>
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+ <button onclick=
+ "
+//  const userChoiseMsg = 'You Have Choosen Bat';
+//Math.random always genrate float value between 0 and 1
+  let randomNumber = Math.random() * 3;
+  let computerChoice = '';
+  if(randomNumber>0 && randomNumber <=1){
+    computerChoice = 'Bat';
+  }else if(randomNumber>1 && randomNumber <=2){
+    computerChoice = 'Ball';
+  }else{
+    computerChoice = 'Stump';
+  }
+  // const computerChoiceMag = `Computer Choice is :: ${computerChoice}`;
+
+  let resultMsg='';
+
+  if(computerChoice === 'Ball'){
+    resultMsg = 'User Won 🏆..!!';
+  }else if(computerChoice === 'Bat'){
+    resultMsg = 'Match Tie 😂..!!';
+  }else if(computerChoice === 'Stump'){
+    resultMsg = 'Computer Won 😭..!!';
+  }
+  alert(`You Have Choosen Bat.  Computer Choice is :: ${computerChoice}  and ${resultMsg}`)
+ "
+ >Bat</button>
+ <button onclick=
+ "
+   randomNumber = Math.random() * 3;
+   computerChoice = '';
+  if(randomNumber>0 && randomNumber <=1){
+    computerChoice = 'Bat';
+  }else if(randomNumber>1 && randomNumber <=2){
+    computerChoice = 'Ball';
+  }else{
+    computerChoice = 'Stump';
+  }
+  // const computerChoiceMag = `Computer Choice is :: ${computerChoice}`;
+
+   resultMsg='';
+
+  if(computerChoice === 'Stump'){
+    resultMsg = 'User Won 🏆..!!';
+  }else if(computerChoice === 'Ball'){
+    resultMsg = 'Match Tie 😂..!!';
+  }else if(computerChoice === 'Bat'){
+    resultMsg = 'Computer Won 😭..!!';
+  }
+  alert(`You Have Choosen Ball.  Computer Choice is :: ${computerChoice}  and ${resultMsg}`)
+ "
+ >Ball</button>
+ <button onclick=
+ "
+  randomNumber = Math.random() * 3;
+   computerChoice = '';
+  if(randomNumber>0 && randomNumber <=1){
+    computerChoice = 'Bat';
+  }else if(randomNumber>1 && randomNumber <=2){
+    computerChoice = 'Ball';
+  }else{
+    computerChoice = 'Stump';
+  }
+  // const computerChoiceMag = `Computer Choice is :: ${computerChoice}`;
+
+   resultMsg='';
+
+  if(computerChoice === 'Stump'){
+    resultMsg = 'Match Tie 😂..!!';
+  }else if(computerChoice === 'Ball'){
+    resultMsg = 'Computer Won 😭..!!';
+  }else if(computerChoice === 'Bat'){
+    resultMsg = 'User Won 🏆..!!';
+  }
+  alert(`You Have Choosen Stump.  Computer Choice is :: ${computerChoice}  and ${resultMsg}`)
+ "
+ >Stump</button>
+
+  <!-- JavaScript Logic Here -->
+
+  <script>
+
+
+
+  </script>
+
+</body>
+</html>

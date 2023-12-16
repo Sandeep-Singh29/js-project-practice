@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Function</title>
+</head>
+
+<body>
+
+  
+  <script>
+    function checkEvenOdd(num){
+      if(num%2 === 0){
+        console.log(`${num} is even`);
+      }else{
+        console.log(`${num} is odd`);
+      }
+    }
+
+
+    function largerNumber(number1 , number2){
+      if(number1>number2){
+        return number1;
+      }else{
+        return number2;
+      }
+    }
+
+    function lowestNumber(number1 , number2){
+      // if(number1<number2){
+      //   return number1;
+      // }else{
+      //   return number2;
+      // }
+      return  number1<number2 ? number1 : number2;
+    }
+
+    function convertIntoFernite(celcius){
+      let fernahite = (9/5) * celcius +32;
+      return fernahite;
+    }
+    
+
+    console.log(checkEvenOdd(8));
+    console.log(checkEvenOdd(0));
+    console.log('Check Largest Number')
+    console.log(largerNumber(6,10)+' :: Is A latgest Number');
+    console.log(lowestNumber(11,14)+' :: Is A lowest Number');
+    console.log(convertIntoFernite(38));
+   
+    
+  </script>
+</body>
+</html>

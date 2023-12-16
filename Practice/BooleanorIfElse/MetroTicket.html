@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Metro Ticketing</title>
+</head>
+<body>
+  <h1 style="text-align: center;">Metro Ticket For Person</h1>
+  <script>
+    let age =66;
+    let gender = 'female'
+    let averageDiscount;
+
+    if(age<=5){
+      averageDiscount = 100;
+    }else if(gender ==='female'){
+      averageDiscount = 50;
+    }else if(age <=8){
+      averageDiscount = 50;
+    }else if(age >=65){
+      averageDiscount = 30;
+    }else {
+      averageDiscount =0;
+    }
+    console.log(`Your final Discount is ${averageDiscount}`)
+  </script>
+</body>
+</html>

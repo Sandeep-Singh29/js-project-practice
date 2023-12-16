@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  
+  <button class="add_bag" onclick="
+    countAdd +=1;
+    document.querySelector('#add_count').innerText =`Your Bag has ${countAdd} items`;
+    ">Add to Bag</button>
+     <button class="add_bag" onclick="
+     countAdd -=1;
+     document.querySelector('#add_count').innerText =`Your Bag has ${countAdd} items`;
+     ">Remove Item</button>
+  <h3 id="add_count"></h3>
+<script>
+  let countAdd =0;
+  document.querySelector('#add_count').innerText =`Your Bag has ${countAdd} items`;
+</script>
+
+</body>
+</html>

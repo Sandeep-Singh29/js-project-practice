@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>event Listner</title>
+</head>
+<body>
+  <button id="btn-id">Click</button>
+  <script>
+
+    let eventBtn = document.querySelector('#btn-id');
+    let eventButton = event => console.log('Double Clicked Me...!!');
+    // eventBtn.addEventListener('click' , eventButton);
+
+    // eventBtn.addEventListener('click' , event => console.log('Clicked Me...!!'));
+    eventBtn.addEventListener('dblclick' , eventButton);
+    eventBtn.addEventListener('click' , event => console.log(new Date()));
+
+    // Remove EventListner 
+
+    // eventBtn.removeEventListener('click' , eventButton);
+
+  </script>
+</body>
+</html>

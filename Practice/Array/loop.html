@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 style="text-align: center;">Array Iteration</h1>
+  <script>
+    let num = 1;
+
+    // while(num<=10){
+    //   console.log(num);
+    //   num++;
+    // }
+
+// Initilized for Loop
+
+    // for(let i=0; i<= 5; i++){
+    //   console.log(i);
+    // }
+
+let data = [2,1,4,7,5,3,8];
+
+// Odd Even Using loop
+
+let len = data.length;
+// for(let i=0; i<len; i++){
+//     if(data[i]%2===0){
+//       console.log(`even ::  ${data[i]}`);
+//     }else{
+//       console.log(`odd ::  ${data[i]}`);
+//     }
+// }
+
+
+// Print Every elemnt Square in show in Other
+
+// not need to declare a fixed size for an array when you create >> JavaScript, arrays are dynamic
+// let newArr = [len];
+let newArr = [];
+
+for(let j=0; j<len; j++){
+    // newArr[j] = data[j]**2;   double into is used for into for two time 
+    // newArr[j] = data[j]*data[j];
+    newArr.push(data[j]*data[j]);
+}
+console.log(`Old Array is ::  ${data}`);
+console.log(`New Array Of Square is ::  ${newArr}`);
+
+
+  </script>
+</body>
+</html>

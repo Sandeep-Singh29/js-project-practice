@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Object</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Object And Product</h1>
+
+    <script>
+      let product = {
+        name: "Lewi's",
+        price: 2344,
+        item_name: "Mens Shirt",
+        size: "L",
+        'item-colour' : "Black"
+      };
+
+      console.log(product);
+      // console.log(product.name);
+      // console.log(product.price);
+      // console.log(product.item_name);
+      // console.log(product.size);
+      // product.name = 'H&M'
+      // console.log(product);
+      // console.log(product.name);
+      // console.log(product['item-colour']);
+      delete product.name;
+      delete product['size']; 
+      console.log(product);
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Press Button</title>
+  <style>
+  #count{
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    border: solid blueviolet;
+    border-radius: 20px;
+  }
+
+.odd{
+   background-color: red;
+}
+.even{
+  background-color: yellow;
+}
+
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Click me And Show count</h1>
+  <button id="count" onclick="getCount();">Click Count</button>
+  <h2 id="showCount"></h2>
+  <script>
+    let count=0;
+    // function getCount(){
+    //   count +=1;
+    //   document.querySelector('#showCount').innerText = `Count is :: ${count}`;
+    //   document.querySelector('#count').innerText = `${count}`;
+    // }
+
+    function getCount(){
+      let button = document.querySelector('#count');
+      count++;
+      if(count%2===0){
+        button.classList.add('even');
+        button.classList.remove('odd');
+      }else{
+        button.classList.add('odd');
+        button.classList.remove('even');
+      }
+      button.innerText = count;
+    }
+
+
+    getCount();
+
+  </script>
+</body>
+</html>
